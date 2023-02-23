@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistemas Distribuidos</title>
+  <!-- NAVIGATION -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Sistemas Distribuidos</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-7">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <td>n°</td>
+            <td>Ubicacion</td>
+            <td>N° Habitaciones</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (data) { %> <% for(var i = 0; i < data.length; i++) {
+          %>
+          <tr>
+            <td><%= data[i].id %></td>
+            <td><%= data[i].ubicacion %></td>
+            <td><%= data[i].numero_habitaciones %></td>
+          </tr>
+          <% } %> <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
