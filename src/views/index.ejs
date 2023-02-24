@@ -12,8 +12,8 @@
   <div class="container">
     <a class="navbar-brand" href="/">Sistemas Distribuidos</a>
   </div>
-</nav>
-
+</nav><h3>El contenido el Documento de drive:<pre><%= imp %></pre>
+</h3>
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-7">
@@ -25,15 +25,15 @@
             <td>N° Habitaciones</td>
           </tr>
         </thead>
-        <tbody>
-          <% if (data) { %> <% for(var i = 0; i < data.length; i++) {
-          %>
-          <tr>
-            <td><%= data[i].id %></td>
-            <td><%= data[i].ubicacion %></td>
-            <td><%= data[i].numero_habitaciones %></td>
-          </tr>
-          <% } %> <% } %>
+       <tbody>
+       <% if (data) { %> <% for(var i = 0; i < data.length; i++) {
+       %>
+         <tr>
+           <td><%= data[i].id %></td>
+           <td><%= data[i].ubicacion %></td>
+           <td><%= data[i].numero_habitaciones %></td>
+         </tr>
+       <% } %> <% } %>
         </tbody>
       </table>
     </div>
